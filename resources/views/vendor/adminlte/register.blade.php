@@ -10,8 +10,8 @@
     }
 
     .register-logo a {
-        color: #f39c12;
-        /* Cor laranja para o texto do logo */
+        color: #6f42c1;
+        /* Cor roxa para o texto do logo */
         font-size: 2.2em;
         font-weight: bold;
         text-align: center;
@@ -44,15 +44,15 @@
     }
 
     .form-control:focus {
-        border-color: #f39c12;
-        /* Borda laranja ao focar */
-        box-shadow: 0 0 0 0.2rem rgba(241, 153, 51, 0.25);
-        /* Sombra laranja ao focar */
+        border-color: #6f42c1;
+        /* Borda roxa ao focar */
+        box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+        /* Sombra roxa ao focar */
     }
 
     .form-control-feedback {
-        color: #f39c12;
-        /* Cor laranja para ícones de feedback */
+        color: #6f42c1;
+        /* Cor roxa para ícones de feedback */
     }
 
     .has-error .form-control {
@@ -66,20 +66,20 @@
     }
 
     .btn-primary {
-        background-color: #f39c12;
-        /* Cor laranja para o botão */
-        border-color: #f39c12;
-        /* Borda laranja para o botão */
+        background-color: #6f42c1;
+        /* Cor roxa para o botão */
+        border-color: #6f42c1;
+        /* Borda roxa para o botão */
         border-radius: 20px;
         /* Bordas arredondadas para o botão */
         padding: 10px;
     }
 
     .btn-primary:hover {
-        background-color: #e67e22;
-        /* Cor laranja escura ao passar o mouse */
-        border-color: #e67e22;
-        /* Borda laranja escura ao passar o mouse */
+        background-color: #5a2d8b;
+        /* Cor roxa escura ao passar o mouse */
+        border-color: #5a2d8b;
+        /* Borda roxa escura ao passar o mouse */
         border-radius: 20px;
     }
 
@@ -90,13 +90,13 @@
     }
 
     .text-center a {
-        color: #f39c12;
-        /* Cor laranja para o link */
+        color: #6f42c1;
+        /* Cor roxa para o link */
     }
 
     .text-center a:hover {
-        color: #e67e22;
-        /* Cor laranja escura para o link ao passar o mouse */
+        color: #5a2d8b;
+        /* Cor roxa escura para o link ao passar o mouse */
     }
 </style>
 @yield('css')

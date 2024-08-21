@@ -30,16 +30,16 @@
         }
 
         .login-logo a {
-            color: #f39c12;
-            /* Cor laranja para o logo */
+            color: #6f42c1;
+            /* Cor roxa para o logo */
             font-weight: bold;
         }
 
         .login-box-body {
             border-radius: 12px;
             /* Bordas arredondadas para o container */
-            border: 1px solid #f39c12;
-            /* Borda laranja */
+            border: 1px solid #6f42c1;
+            /* Borda roxa */
             background-color: #fff;
             /* Cor de fundo branca */
             padding: 20px;
@@ -48,41 +48,41 @@
         .form-control.rounded-input {
             border-radius: 8px;
             /* Bordas arredondadas para os inputs */
-            border-color: #f39c12;
-            /* Borda laranja para os inputs */
+            border-color: #6f42c1;
+            /* Borda roxa para os inputs */
         }
 
         .form-control:focus {
-            border-color: #e67e22;
-            /* Cor laranja escura ao focar no input */
-            box-shadow: 0 0 0 0.2rem rgba(241, 153, 51, 0.25);
-            /* Sombra laranja ao focar no input */
+            border-color: #5a2d8b;
+            /* Cor roxa escura ao focar no input */
+            box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.25);
+            /* Sombra roxa ao focar no input */
         }
 
-        .btn-orange {
-            background-color: #f39c12;
-            /* Cor laranja para o botão */
-            border-color: #f39c12;
-            /* Cor da borda laranja para o botão */
+        .btn-purple {
+            background-color: #6f42c1;
+            /* Cor roxa para o botão */
+            border-color: #6f42c1;
+            /* Cor da borda roxa para o botão */
             border-radius: 8px;
             /* Bordas arredondadas para o botão */
         }
 
-        .btn-orange:hover {
-            background-color: #e67e22;
-            /* Cor laranja escura ao passar o mouse */
-            border-color: #e67e22;
-            /* Cor da borda laranja escura ao passar o mouse */
+        .btn-purple:hover {
+            background-color: #5a2d8b;
+            /* Cor roxa escura ao passar o mouse */
+            border-color: #5a2d8b;
+            /* Cor da borda roxa escura ao passar o mouse */
         }
 
         .text-center a {
-            color: #f39c12;
-            /* Cor laranja para links */
+            color: #6f42c1;
+            /* Cor roxa para links */
         }
 
         .text-center a:hover {
-            color: #e67e22;
-            /* Cor laranja escura para links ao passar o mouse */
+            color: #5a2d8b;
+            /* Cor roxa escura para links ao passar o mouse */
         }
     </style>
 

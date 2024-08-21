@@ -6,17 +6,17 @@
 <style>
     /* Personalização para o layout do AdminLTE */
     .main-header {
-        background-color: #f39c12;
-        /* Cor laranja para o cabeçalho */
-        border-bottom: 2px solid #e67e22;
-        /* Borda laranja escura */
+        background-color: #6f42c1;
+        /* Cor roxa para o cabeçalho */
+        border-bottom: 2px solid #5a2d8b;
+        /* Borda roxa escura */
     }
 
     .main-header .logo {
-        background-color: #f39c12;
-        /* Cor laranja para o logo */
-        border-bottom: 2px solid #e67e22;
-        /* Borda laranja escura para o logo */
+        background-color: #6f42c1;
+        /* Cor roxa para o logo */
+        border-bottom: 2px solid #5a2d8b;
+        /* Borda roxa escura para o logo */
     }
 
     .main-header .logo-mini,
@@ -26,8 +26,8 @@
     }
 
     .main-header .navbar {
-        background-color: #f39c12;
-        /* Cor laranja para a barra de navegação */
+        background-color: #6f42c1;
+        /* Cor roxa para a barra de navegação */
     }
 
     .main-header .navbar .nav>li>a {
@@ -36,15 +36,15 @@
     }
 
     .main-header .navbar .nav>li>a:hover {
-        background-color: #e67e22;
-        /* Cor laranja escura ao passar o mouse */
+        background-color: #5a2d8b;
+        /* Cor roxa escura ao passar o mouse */
     }
 
     .main-sidebar {
         background-color: #fff;
         /* Cor de fundo branca para a barra lateral */
-        border-right: 2px solid #f39c12;
-        /* Borda laranja direita para a barra lateral */
+        border-right: 2px solid #6f42c1;
+        /* Borda roxa direita para a barra lateral */
     }
 
     .sidebar-menu>li>a {
@@ -55,8 +55,8 @@
     }
 
     .sidebar-menu>li>a:hover {
-        background-color: #f39c12;
-        /* Cor laranja ao passar o mouse sobre itens do menu */
+        background-color: #6f42c1;
+        /* Cor roxa ao passar o mouse sobre itens do menu */
         color: #fff;
         /* Cor branca para o texto ao passar o mouse */
     }
@@ -67,8 +67,8 @@
     }
 
     .main-footer {
-        background-color: #f39c12;
-        /* Cor laranja para o rodapé */
+        background-color: #6f42c1;
+        /* Cor roxa para o rodapé */
         color: #fff;
         /* Cor branca para o texto do rodapé */
     }
@@ -79,27 +79,27 @@
     }
 
     .main-footer a:hover {
-        color: #e67e22;
-        /* Cor laranja escura para links no rodapé ao passar o mouse */
+        color: #5a2d8b;
+        /* Cor roxa escura para links no rodapé ao passar o mouse */
     }
 
     /* Personalização para os botões */
     .btn-primary,
     .btn-primary:hover {
-        background-color: #f39c12;
-        /* Cor laranja para botões */
-        border-color: #f39c12;
-        /* Cor laranja para a borda do botão */
+        background-color: #605ca8;
+        /* Cor roxa para botões */
+        border-color: #6f42c1;
+        /* Cor roxa para a borda do botão */
     }
 
     .btn-primary:focus,
     .btn-primary:active {
-        box-shadow: 0 0 0 0.2rem rgba(241, 153, 51, 0.25);
-        /* Sombra laranja ao focar no botão */
+        box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.25);
+        /* Sombra roxa ao focar no botão */
     }
 
-    /* Estilo do checkbox para cor laranja */
-    .icheck-primary .icheckbox_square-orange {
+    /* Estilo do checkbox para cor roxa */
+    .icheck-primary .icheckbox_square-purple {
         position: relative;
         display: inline-block;
         width: 20px;
@@ -107,34 +107,34 @@
         border-radius: 3px;
     }
 
-    .icheck-primary .icheckbox_square-orange input {
+    .icheck-primary .icheckbox_square-purple input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
     }
 
-    .icheck-primary .icheckbox_square-orange input:checked~.icheckbox_square {
-        background: #f39c12;
-        /* Cor laranja para quando marcado */
-        border-color: #f39c12;
-        /* Borda laranja quando marcado */
+    .icheck-primary .icheckbox_square-purple input:checked~.icheckbox_square {
+        background: #6f42c1;
+        /* Cor roxa para quando marcado */
+        border-color: #6f42c1;
+        /* Borda roxa quando marcado */
     }
 
-    .icheck-primary .icheckbox_square-orange .icheckbox_square {
-        border: 2px solid #f39c12;
-        /* Borda laranja para o checkbox */
+    .icheck-primary .icheckbox_square-purple .icheckbox_square {
+        border: 2px solid #6f42c1;
+        /* Borda roxa para o checkbox */
         border-radius: 3px;
         /* Bordas arredondadas para o checkbox */
         background-color: #fff;
         /* Cor de fundo branca */
     }
 
-    .icheck-primary .icheckbox_square-orange:hover .icheckbox_square {
-        border-color: #e67e22;
+    .icheck-primary .icheckbox_square-purple:hover .icheckbox_square {
+        border-color: #5a2d8b;
         /* Cor da borda ao passar o mouse */
     }
 
-    .icheck-primary .icheckbox_square-orange input:checked~.icheckbox_square::after {
+    .icheck-primary .icheckbox_square-purple input:checked~.icheckbox_square::after {
         content: "";
         position: absolute;
         left: 5px;

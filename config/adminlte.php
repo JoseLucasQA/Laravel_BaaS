@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'skin' => 'yellow',
+    'skin' => 'purple',
 
     /*
     |--------------------------------------------------------------------------
@@ -58,7 +58,7 @@ return [
     |
     */
 
-    'layout' => 'top-nav',
+    'layout' => 'fixed',
 
     /*
     |--------------------------------------------------------------------------
@@ -129,23 +129,27 @@ return [
 
     'menu' => [
         [
-            'text'  => 'Dashboard',
-            'url'   => 'admin',
-            'icon'  => 'fa-power-off'
+            'text'        => 'Dashboard',
+            'url'         => 'admin',
+            'icon'        => 'fa-solid fa-gauge',
+        ],
+        [
+            'text'  => 'Financeiro',
+            'url'   => '',
+            'icon'  => 'fa-solid fa-dollar-sign',
+            'submenu'   => [
+                [
+                    'text'  => 'Saldo',
+                    'url'   => 'admin/balance',
+                    'icon'  => 'fa-solid fa-sack-dollar'
+                ],
+                [
+                    'text'  => 'Extrato',
+                    'url'   => 'historic',
+                    'icon'  => 'fa-solid fa-receipt'
+                ]
+            ]
         ]
-        // [
-        //     'text'  => 'Financeiro',
-        //     'url'   => '',
-        //     'icon'  => 'fa-bath',
-        //     'submenu'   => [
-        //         [
-        //             'text'  => 'Saldo',
-        //             'url'   => 'balance',
-        //             'icon'  => 'card'
-        //         ]
-        //     ]
-        // ]
-
     ],
 
     /*
@@ -252,6 +256,22 @@ return [
                     'type' => 'js',
                     'asset' => false,
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js',
+                ],
+            ],
+        ],
+        [
+            'name' => 'font-awesome',
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css',
+                ],
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => 'cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js',
                 ],
             ],
         ],
