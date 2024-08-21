@@ -128,12 +128,24 @@ return [
     */
 
     'menu' => [
-        'MENU',
         [
-            'text'        => 'Home',
-            'url'         => 'admin',
-            'icon'        => 'home',
+            'text'  => 'Dashboard',
+            'url'   => 'admin',
+            'icon'  => 'fa-power-off'
         ]
+        // [
+        //     'text'  => 'Financeiro',
+        //     'url'   => '',
+        //     'icon'  => 'fa-bath',
+        //     'submenu'   => [
+        //         [
+        //             'text'  => 'Saldo',
+        //             'url'   => 'balance',
+        //             'icon'  => 'card'
+        //         ]
+        //     ]
+        // ]
+
     ],
 
     /*

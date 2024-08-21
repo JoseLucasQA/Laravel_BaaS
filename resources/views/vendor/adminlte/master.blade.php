@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title_prefix', config('adminlte.title_prefix', ''))
-@yield('title', config('adminlte.title', 'AdminLTE 2'))
-@yield('title_postfix', config('adminlte.title_postfix', ''))</title>
+        @yield('title', config('adminlte.title', 'AdminLTE 2'))
+        @yield('title_postfix', config('adminlte.title_postfix', ''))</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -22,6 +23,69 @@
 
     @yield('adminlte_css')
 
+    <style>
+        .login-box {
+            width: 360px;
+            margin: 7% auto;
+        }
+
+        .login-logo a {
+            color: #f39c12;
+            /* Cor laranja para o logo */
+            font-weight: bold;
+        }
+
+        .login-box-body {
+            border-radius: 12px;
+            /* Bordas arredondadas para o container */
+            border: 1px solid #f39c12;
+            /* Borda laranja */
+            background-color: #fff;
+            /* Cor de fundo branca */
+            padding: 20px;
+        }
+
+        .form-control.rounded-input {
+            border-radius: 8px;
+            /* Bordas arredondadas para os inputs */
+            border-color: #f39c12;
+            /* Borda laranja para os inputs */
+        }
+
+        .form-control:focus {
+            border-color: #e67e22;
+            /* Cor laranja escura ao focar no input */
+            box-shadow: 0 0 0 0.2rem rgba(241, 153, 51, 0.25);
+            /* Sombra laranja ao focar no input */
+        }
+
+        .btn-orange {
+            background-color: #f39c12;
+            /* Cor laranja para o botão */
+            border-color: #f39c12;
+            /* Cor da borda laranja para o botão */
+            border-radius: 8px;
+            /* Bordas arredondadas para o botão */
+        }
+
+        .btn-orange:hover {
+            background-color: #e67e22;
+            /* Cor laranja escura ao passar o mouse */
+            border-color: #e67e22;
+            /* Cor da borda laranja escura ao passar o mouse */
+        }
+
+        .text-center a {
+            color: #f39c12;
+            /* Cor laranja para links */
+        }
+
+        .text-center a:hover {
+            color: #e67e22;
+            /* Cor laranja escura para links ao passar o mouse */
+        }
+    </style>
+
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -30,17 +94,19 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
+
 <body class="hold-transition @yield('body_class')">
 
-@yield('body')
+    @yield('body')
 
-<script src="{{ asset('vendor/adminlte/vendor/jquery/dist/jquery.min.js') }}"></script>
-<script src="{{ asset('vendor/adminlte/vendor/jquery/dist/jquery.slimscroll.min.js') }}"></script>
-<script src="{{ asset('vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('vendor/adminlte/vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/adminlte/vendor/jquery/dist/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('vendor/adminlte/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
-@include('adminlte::plugins', ['type' => 'js'])
+    @include('adminlte::plugins', ['type' => 'js'])
 
-@yield('adminlte_js')
+    @yield('adminlte_js')
 
 </body>
+
 </html>
