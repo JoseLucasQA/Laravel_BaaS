@@ -15,16 +15,16 @@
     }
 
     .login-logo a {
-        color: #f39c12;
-        /* Cor laranja para o logo */
+        color: #6f42c1;
+        /* Cor roxa para o logo */
         font-weight: bold;
     }
 
     .login-box-body {
         border-radius: 12px;
         /* Bordas arredondadas para o container */
-        border: 1px solid #f39c12;
-        /* Borda laranja */
+        border: 1px solid #6f42c1;
+        /* Borda roxa */
         background-color: #fff;
         /* Cor de fundo branca */
         padding: 20px;
@@ -33,47 +33,49 @@
     .form-control.rounded-input {
         border-radius: 8px;
         /* Bordas arredondadas para os inputs */
-        border-color: #f39c12;
-        /* Borda laranja para os inputs */
+        border-color: #6f42c1;
+        /* Borda roxa para os inputs */
     }
 
     .form-control:focus {
-        border-color: #e67e22;
-        /* Cor laranja escura ao focar no input */
-        box-shadow: 0 0 0 0.2rem rgba(241, 153, 51, 0.25);
-        /* Sombra laranja ao focar no input */
+        border-color: #5a2d8b;
+        /* Cor roxa escura ao focar no input */
+        box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.25);
+        /* Sombra roxa ao focar no input */
     }
 
-    .btn-orange {
-        background-color: #f39c12;
-        /* Cor laranja para o botão */
-        border-color: #f39c12;
-        /* Cor da borda laranja para o botão */
+    .btn-purple {
+        /* Cor texto para o botão */
+        color:#fff;
+        background-color: #6f42c1;
+        /* Cor roxa para o botão */
+        border-color: #6f42c1;
+        /* Cor da borda roxa para o botão */
         border-radius: 20px;
         /* Bordas arredondadas para o botão */
     }
 
-    .btn-orange:hover {
-        background-color: #e67e22;
-        /* Cor laranja escura ao passar o mouse */
-        border-color: #e67e22;
-        /* Cor da borda laranja escura ao passar o mouse */
+    .btn-purple:hover {
+        background-color: #5a2d8b;
+        /* Cor roxa escura ao passar o mouse */
+        border-color: #5a2d8b;
+        /* Cor da borda roxa escura ao passar o mouse */
         border-radius: 20px;
         /* Bordas arredondadas para o botão */
     }
 
     .text-center a {
-        color: #f39c12;
-        /* Cor laranja para links */
+        color: #6f42c1;
+        /* Cor roxa para links */
     }
 
     .text-center a:hover {
-        color: #e67e22;
-        /* Cor laranja escura para links ao passar o mouse */
+        color: #5a2d8b;
+        /* Cor roxa escura para links ao passar o mouse */
     }
 
     /* Estilos para o icheck-bootstrap */
-    .icheck-primary .icheckbox_square-orange {
+    .icheck-primary .icheckbox_square-purple {
         position: relative;
         display: inline-block;
         width: 20px;
@@ -81,34 +83,34 @@
         border-radius: 3px;
     }
 
-    .icheck-primary .icheckbox_square-orange input {
+    .icheck-primary .icheckbox_square-purple input {
         position: absolute;
         opacity: 0;
         cursor: pointer;
     }
 
-    .icheck-primary .icheckbox_square-orange input:checked~.icheckbox_square {
-        background: #f39c12;
-        /* Cor laranja para quando marcado */
-        border-color: #f39c12;
-        /* Borda laranja quando marcado */
+    .icheck-primary .icheckbox_square-purple input:checked~.icheckbox_square {
+        background: #6f42c1;
+        /* Cor roxa para quando marcado */
+        border-color: #6f42c1;
+        /* Borda roxa quando marcado */
     }
 
-    .icheck-primary .icheckbox_square-orange .icheckbox_square {
-        border: 2px solid #f39c12;
-        /* Borda laranja para o checkbox */
+    .icheck-primary .icheckbox_square-purple .icheckbox_square {
+        border: 2px solid #6f42c1;
+        /* Borda roxa para o checkbox */
         border-radius: 3px;
         /* Bordas arredondadas para o checkbox */
         background-color: #fff;
         /* Cor de fundo branca */
     }
 
-    .icheck-primary .icheckbox_square-orange:hover .icheckbox_square {
-        border-color: #e67e22;
+    .icheck-primary .icheckbox_square-purple:hover .icheckbox_square {
+        border-color: #5a2d8b;
         /* Cor da borda ao passar o mouse */
     }
 
-    .icheck-primary .icheckbox_square-orange input:checked~.icheckbox_square::after {
+    .icheck-primary .icheckbox_square-purple input:checked~.icheckbox_square::after {
         content: "";
         position: absolute;
         left: 5px;
@@ -156,13 +158,13 @@
             <div class="row">
                 <div class="col-xs-8">
                     <div class="icheck-primary">
-                        <input type="checkbox" name="remember" id="remember" class="icheckbox_square-orange">
+                        <input type="checkbox" name="remember" id="remember" class="icheckbox_square-purple">
                         <label for="remember">{{ trans('adminlte::adminlte.remember_me') }}</label>
                     </div>
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-orange btn-block">
+                    <button type="submit" class="btn btn-purple btn-block">
                         {{ trans('adminlte::adminlte.sign_in') }}
                     </button>
                 </div>
