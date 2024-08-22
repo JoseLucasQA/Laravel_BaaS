@@ -15,10 +15,17 @@
 @section('content')
 <div class="box">
     <div class="box-body">
+        @if ($errors->any())
+            <div class="alert alert-warning">
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>
+                @endforeach
+            </div>
+        @endif
         <form method="post" action="{{ route('deposit.confirm') }}">
             {!! csrf_field() !!}
             <div class="form-group">
-                <input name="value" type="text" placeholder="R$ 0,00" class="form-control">
+                <input name="value" type="text" placeholder="Exemplo: R$100,00" class="form-control">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Confirmar</button>
