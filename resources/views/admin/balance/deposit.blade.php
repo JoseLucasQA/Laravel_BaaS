@@ -15,13 +15,7 @@
 @section('content')
 <div class="box">
     <div class="box-body">
-        @if ($errors->any())
-            <div class="alert alert-warning">
-                @foreach ($errors->all() as $error)
-                    <p>{{ $error }}</p>
-                @endforeach
-            </div>
-        @endif
+        @include('admin.includes.alerts')
         <form method="post" action="{{ route('deposit.confirm') }}">
             {!! csrf_field() !!}
             <div class="form-group">
