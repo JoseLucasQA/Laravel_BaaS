@@ -16,7 +16,7 @@
     <div class="box-body">
         <div class="small-box bg-purple">
             <div class="inner">
-                <h3>R$ 248,92</h3>
+                <h3>R$ {{number_format($amount, 2, ',', '.')}}</h3>
             </div>
             <a href="#" class="small-box-footer">Extrato <i class="fa-solid fa-receipt"></i></a>
         </div>
