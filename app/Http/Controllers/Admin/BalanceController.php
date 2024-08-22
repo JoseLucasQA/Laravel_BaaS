@@ -37,4 +37,16 @@ class BalanceController extends Controller
 
         return redirect()->back()->with('error', $response['message']);
     }
+
+    public function withdrawConfirm(MoneyValidationFormRequest $request, Balance $balance)
+    {
+        $balance = auth()->user()->balance()->firstOrCreate([]);
+        $response = $balance->withdraw($request->value);
+
+        if ($response['success']) {
+            return redirect()->route('admin.balance')->with('success', $response['message']);
+        }
+
+        return redirect()->back()->with('error', $response['message']);
+    }
 }

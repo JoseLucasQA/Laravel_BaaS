@@ -13,5 +13,18 @@
 @stop
 
 @section('content')
-<p>You are logged in!</p>
+<div class="box">
+    <div class="box-body">
+        @include('admin.includes.alerts')
+        <form method="post" action="{{ route('withdraw.confirm') }}">
+            {!! csrf_field() !!}
+            <div class="form-group">
+                <input name="value" type="text" placeholder="Exemplo: R$100,00" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Confirmar</button>
+            </div>
+        </form>
+    </div>
+</div>
 @stop
