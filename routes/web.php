@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Auth;
 */
 
 $this->group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
+    $this->get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
+    $this->post('deposit', 'BalanceController@depositConfirm')->name('deposit.confirm');
+    $this->get('deposit', 'BalanceController@deposit')->name('balance.deposit');
     $this->get('balance', 'BalanceController@index')->name('admin.balance');
 
     $this->get('/', 'AdminController@index')->name('admin.home');
