@@ -18,6 +18,7 @@
         @include('admin.includes.alerts')
         <form method="post" action="{{ route('deposit.confirm') }}">
             {!! csrf_field() !!}
+
             <div class="form-group">
                 <input name="value" type="text" placeholder="Exemplo: R$100,00" class="form-control">
             </div>

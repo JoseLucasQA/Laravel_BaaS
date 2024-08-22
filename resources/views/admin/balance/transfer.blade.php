@@ -1,14 +1,14 @@
 @extends('adminlte::page')
 
-@section('title', 'Efetuar Saque')
+@section('title', 'Efetuar Transferência')
 
 @section('content_header')
-<h1>Efetuar Saque</h1>
+<h1>Efetuar Transferência</h1>
 
 <ol class="breadcrumb">
     <li><a href="">Dashboard</a></li>
     <li><a href="">Saldo</a></li>
-    <li><a href="">Saque</a></li>
+    <li><a href="">Transferir</a></li>
 </ol>
 @stop
 
@@ -16,14 +16,15 @@
 <div class="box">
     <div class="box-body">
         @include('admin.includes.alerts')
-        <form method="post" action="{{ route('withdraw.confirm') }}">
+        <form method="post" action="{{ route('transfer.receiver') }}">
             {!! csrf_field() !!}
-            
+
             <div class="form-group">
-                <input name="value" type="text" placeholder="Exemplo: R$100,00" class="form-control">
+                <input name="sender" type="text" placeholder="Dados do destinatário (Nome ou Email)"
+                    class="form-control">
             </div>
             <div class="form-group">
-                <button type="submit" class="btn btn-primary">Confirmar</button>
+                <button type="submit" class="btn btn-primary">Avançar</button>
             </div>
         </form>
     </div>

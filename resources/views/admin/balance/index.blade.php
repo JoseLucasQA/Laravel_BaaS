@@ -25,6 +25,8 @@
         @if ($amount > 0)
             <a href="{{ route('balance.withdraw') }}" class="btn btn-primary">Sacar <i
                     class="fa-solid fa-hand-holding-dollar"></i></a>
+            <a href="{{ route('balance.transfer') }}" class="btn btn-primary">Transferir <i
+                    class="fa-solid fa-money-bill-transfer"></i></a>
         @endif
         <a href="#" class="btn btn-primary">Extrato <i class="fa-solid fa-receipt"></i></a>
     </div>

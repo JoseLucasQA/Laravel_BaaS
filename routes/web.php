@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Auth;
 
 Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
+    $this->post('transferConfirm', 'BalanceController@transferConfirm')->name('transfer.confirm');
+    $this->post('transfer', 'BalanceController@transferReceiver')->name('transfer.receiver');
+    $this->get('transfer', 'BalanceController@transfer')->name('balance.transfer');
+
     $this->post('withdraw', 'BalanceController@withdrawConfirm')->name('withdraw.confirm');
     $this->get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
 

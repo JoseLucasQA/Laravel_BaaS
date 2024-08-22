@@ -84,4 +84,9 @@ class Balance extends Model
             ];
         }
     }
+
+    public function transfer()
+    {
+
+    }
 }
