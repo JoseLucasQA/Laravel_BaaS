@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-$this->group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
+Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
     $this->post('withdraw', 'BalanceController@withdrawConfirm')->name('withdraw.confirm');
     $this->get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
@@ -26,6 +26,6 @@ $this->group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'adm
     $this->get('/', 'AdminController@index')->name('admin.home');
 });
 
-$this->get('/', 'Site\SiteController@index')->name('home');
+Route::get('/', 'Site\SiteController@index')->name('home');
 
 Auth::routes();
