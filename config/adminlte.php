@@ -135,7 +135,6 @@ return [
         ],
         [
             'text'  => 'Financeiro',
-            'url'   => '',
             'icon'  => 'fa-solid fa-dollar-sign',
             'submenu'   => [
                 [
@@ -145,7 +144,7 @@ return [
                 ],
                 [
                     'text'  => 'Extrato',
-                    'url'   => 'historic',
+                    'url'   => 'admin/historic',
                     'icon'  => 'fa-solid fa-receipt'
                 ]
             ]

@@ -15,19 +15,21 @@ use Illuminate\Support\Facades\Auth;
 
 Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'admin'], function () {
 
-    $this->post('transferConfirm', 'BalanceController@transferConfirm')->name('transfer.confirm');
-    $this->post('transfer', 'BalanceController@transferReceiver')->name('transfer.receiver');
-    $this->get('transfer', 'BalanceController@transfer')->name('balance.transfer');
+    Route::get('historic', 'BalanceController@historic')->name('admin.historic');
 
-    $this->post('withdraw', 'BalanceController@withdrawConfirm')->name('withdraw.confirm');
-    $this->get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
+    Route::post('transferConfirm', 'BalanceController@transferConfirm')->name('transfer.confirm');
+    Route::post('transfer', 'BalanceController@transferReceiver')->name('transfer.receiver');
+    Route::get('transfer', 'BalanceController@transfer')->name('balance.transfer');
 
-    $this->post('deposit', 'BalanceController@depositConfirm')->name('deposit.confirm');
-    $this->get('deposit', 'BalanceController@deposit')->name('balance.deposit');
+    Route::post('withdraw', 'BalanceController@withdrawConfirm')->name('withdraw.confirm');
+    Route::get('withdraw', 'BalanceController@withdraw')->name('balance.withdraw');
 
-    $this->get('balance', 'BalanceController@index')->name('admin.balance');
+    Route::post('deposit', 'BalanceController@depositConfirm')->name('deposit.confirm');
+    Route::get('deposit', 'BalanceController@deposit')->name('balance.deposit');
 
-    $this->get('/', 'AdminController@index')->name('admin.home');
+    Route::get('balance', 'BalanceController@index')->name('admin.balance');
+
+    Route::get('/', 'AdminController@index')->name('admin.home');
 });
 
 Route::get('/', 'Site\SiteController@index')->name('home');
