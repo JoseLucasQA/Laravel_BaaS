@@ -43,6 +43,11 @@
                 @endforelse
             </tbody>
         </table>
+        <div class="row">
+            <div style="text-align: right;" class="col-md-12">
+                {!! $historics->links() !!}
+            </div>
+        </div>
     </div>
 </div>
 @stop

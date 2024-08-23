@@ -128,19 +128,19 @@ return [
     */
 
     'menu' => [
-        [
-            'text'        => 'Dashboard',
-            'url'         => 'admin',
-            'icon'        => 'fa-solid fa-gauge',
-        ],
+        // [
+        //     'text'        => 'Dashboard',
+        //     'url'         => 'admin',
+        //     'icon'        => 'fa-solid fa-gauge',
+        // ],
         [
             'text'  => 'Financeiro',
             'icon'  => 'fa-solid fa-dollar-sign',
             'submenu'   => [
                 [
-                    'text'  => 'Saldo',
+                    'text'  => 'Carteira Digital',
                     'url'   => 'admin/balance',
-                    'icon'  => 'fa-solid fa-sack-dollar'
+                    'icon'  => 'fa-solid fa-wallet'
                 ],
                 [
                     'text'  => 'Extrato',

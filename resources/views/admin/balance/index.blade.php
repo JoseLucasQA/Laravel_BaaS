@@ -5,7 +5,7 @@
 @section('content_header')
 <ol class="breadcrumb">
     <li><a href="">Dashboard</a></li>
-    <li><a href="">Saldo</a></li>
+    <li><a href="">Carteira Digital</a></li>
 </ol>
 
 <h1>Saldo</h1>
@@ -28,7 +28,6 @@
             <a href="{{ route('balance.transfer') }}" class="btn btn-primary">Transferir <i
                     class="fa-solid fa-money-bill-transfer"></i></a>
         @endif
-        <a href="{{ route('admin.historic')}}" class="btn btn-primary">Extrato <i class="fa-solid fa-receipt"></i></a>
     </div>
 </div>
 </div>
