@@ -71,12 +71,30 @@ class BalanceController extends Controller
                 ->with('error', 'Não é possível efetuar transferência para o mesmo titular da conta.');
         }
 
-        return view('admin.balance.transferReceiver', compact('sender'));
+        $balance = auth()->user()->balance;
+
+        return view('admin.balance.transferReceiver', compact('sender', 'balance'));
     }
 
-    public function transferConfirm(Request $request)
+    public function transferConfirm(MoneyValidationFormRequest $request, User $user)
     {
-        dd($request->all());
+        if (!$sender = $user->find($request->sender_id))
+            return redirect()
+                ->route('balance.transfer')
+                ->with('success', 'Recebedor Não Encontrado!');
+
+        $balance = auth()->user()->balance()->firstOrCreate([]);
+        $response = $balance->transfer($request->value, $sender);
+
+        if ($response['success'])
+            return redirect()
+                ->route('admin.balance')
+                ->with('success', $response['message']);
+
+
+        return redirect()
+            ->route('balance.transfer')
+            ->with('error', $response['message']);
     }
 
 }

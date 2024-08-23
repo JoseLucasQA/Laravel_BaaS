@@ -20,7 +20,12 @@
 
         <p>
             <strong>
-                Destinatário: {{$sender->name}}
+                Destinatário: {{ $sender->name }}
+            </strong>
+        </p>
+        <p>
+            <strong>
+                Saldo R$: {{ number_format($balance->amount, '2', ',', '.') }}
             </strong>
         </p>
 
@@ -30,7 +35,7 @@
             <input type="hidden" name="sender_id" value="{{ $sender->id }}">
 
             <div class="form-group">
-                <input name="balance" type="text" placeholder="Valor: R$ 0,00" class="form-control">
+                <input name="value" type="text" placeholder="Valor: R$ 0,00" class="form-control">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Confirmar</button>
